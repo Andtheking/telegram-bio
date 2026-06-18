@@ -1,0 +1,9 @@
+services:
+    telegram-bio:
+        build: .
+        container_name: telegram-bio-bot
+        restart: always
+        environment:
+            - PYTHONUNBUFFERED=1
+        volumes:
+            - /etc/localtime:/etc/localtime:ro
